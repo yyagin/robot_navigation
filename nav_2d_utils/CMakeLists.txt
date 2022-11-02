@@ -17,6 +17,7 @@ find_package(catkin REQUIRED
         tf2_ros
         tf2_geometry_msgs
         xmlrpcpp
+        backward_ros
 )
 catkin_python_setup()
 

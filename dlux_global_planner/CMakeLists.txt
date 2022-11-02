@@ -12,6 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
         pluginlib
         roscpp
         visualization_msgs
+        backward_ros
 )
 catkin_package(
     CATKIN_DEPENDS

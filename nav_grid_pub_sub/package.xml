@@ -18,6 +18,7 @@
   <depend>nav_grid_iterators</depend>
   <depend>nav_msgs</depend>
   <depend>roscpp</depend>
+  <depend>backward_ros</depend>
   <test_depend>roslint</test_depend>
 
 </package>

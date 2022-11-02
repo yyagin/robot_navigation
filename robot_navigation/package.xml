@@ -13,6 +13,7 @@
   <exec_depend>dlux_global_planner</exec_depend>
   <exec_depend>dlux_plugins</exec_depend>
   <exec_depend>dwb_critics</exec_depend>
+  <depend>backward_ros</depend>
   <exec_depend>dwb_local_planner</exec_depend>
   <exec_depend>dwb_msgs</exec_depend>
   <exec_depend>dwb_plugins</exec_depend>

@@ -20,6 +20,7 @@
   <depend>qtbase5-dev</depend>
   <depend>roscpp</depend>
   <depend>rviz</depend>
+  <depend>backward_ros</depend>
   <depend>std_msgs</depend>
   <test_depend>roslint</test_depend>
   <export>

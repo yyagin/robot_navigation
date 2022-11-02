@@ -13,5 +13,6 @@
   <depend>roscpp</depend>
   <test_depend>roslint</test_depend>
   <test_depend>rosunit</test_depend>
+  <depend>backward_ros</depend>
 
 </package>

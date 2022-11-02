@@ -8,5 +8,6 @@
 
   <buildtool_depend>catkin</buildtool_depend>
   <depend>std_msgs</depend>
+  <depend>backward_ros</depend>
   <test_depend>roslint</test_depend>
 </package>

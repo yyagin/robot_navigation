@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(rqt_dwb_plugin)
 
-find_package(catkin REQUIRED)
+find_package(catkin REQUIRED backward_ros)
 catkin_python_setup()
 
 catkin_package()

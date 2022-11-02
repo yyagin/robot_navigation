@@ -15,6 +15,7 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   tf
   visualization_msgs
+  backward_ros
 )
 
 catkin_package(

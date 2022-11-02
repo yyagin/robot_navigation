@@ -17,6 +17,7 @@
   <depend>pluginlib</depend>
   <depend>roscpp</depend>
   <depend>yaml-cpp</depend>
+  <depend>backward_ros</depend>
   <test_depend>roslint</test_depend>
 
 </package>

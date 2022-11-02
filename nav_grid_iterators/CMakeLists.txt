@@ -3,7 +3,7 @@ project(nav_grid_iterators)
 set_directory_properties(PROPERTIES COMPILE_OPTIONS "-std=c++11;-Wall;-Werror")
 
 find_package(catkin REQUIRED COMPONENTS
-  nav_grid nav_2d_msgs nav_2d_utils nav_msgs roscpp
+  nav_grid nav_2d_msgs nav_2d_utils nav_msgs roscpp backward_ros
 )
 
 catkin_package(

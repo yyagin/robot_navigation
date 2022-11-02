@@ -14,6 +14,7 @@
   <depend>nav_core2</depend>
   <depend>nav_msgs</depend>
   <depend>pluginlib</depend>
+  <depend>backward_ros</depend>
   <depend>roscpp</depend>
   <depend>rospy</depend>
   <test_depend>roslint</test_depend>

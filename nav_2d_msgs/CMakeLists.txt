@@ -5,6 +5,7 @@ find_package(catkin REQUIRED COMPONENTS
     geometry_msgs
     message_generation
     std_msgs
+    backward_ros
 )
 
 add_message_files(FILES

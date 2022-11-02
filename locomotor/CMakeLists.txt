@@ -3,7 +3,7 @@ project(locomotor)
 set_directory_properties(PROPERTIES COMPILE_OPTIONS "-std=c++11;-Wall;-Werror")
 
 find_package(catkin REQUIRED COMPONENTS
-  actionlib geometry_msgs locomotor_msgs nav_2d_msgs nav_2d_utils nav_core2 nav_msgs pluginlib roscpp rospy
+  actionlib geometry_msgs locomotor_msgs nav_2d_msgs nav_2d_utils nav_core2 nav_msgs pluginlib roscpp rospy backward_ros
 )
 
 catkin_package(

@@ -17,6 +17,7 @@
   <depend>nav_msgs</depend>
   <depend>pluginlib</depend>
   <depend>roscpp</depend>
+  <depend>backward_ros</depend>
   <depend>visualization_msgs</depend>
   <test_depend>roslint</test_depend>
   <test_depend>rostest</test_depend>

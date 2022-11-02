@@ -15,6 +15,7 @@ find_package(catkin REQUIRED COMPONENTS
     robot_nav_rviz_plugins
     roscpp
     rviz
+    backward_ros
 )
 
 set(CMAKE_AUTOMOC ON)

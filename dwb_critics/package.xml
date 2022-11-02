@@ -15,6 +15,7 @@
   <depend>costmap_queue</depend>
   <depend>dwb_local_planner</depend>
   <depend>geometry_msgs</depend>
+  <depend>backward_ros</depend>
   <depend>nav_2d_msgs</depend>
   <depend>nav_2d_utils</depend>
   <depend>nav_core2</depend>

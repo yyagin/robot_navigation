@@ -3,7 +3,7 @@ project(dlux_plugins)
 set_directory_properties(PROPERTIES COMPILE_OPTIONS "-std=c++11;-Wall;-Werror")
 
 find_package(catkin REQUIRED
-    COMPONENTS dlux_global_planner nav_core2 nav_grid pluginlib
+    COMPONENTS dlux_global_planner nav_core2 nav_grid pluginlib backward_ros
 )
 
 catkin_package(

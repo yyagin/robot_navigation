@@ -13,6 +13,7 @@ find_package(catkin REQUIRED
         nav_grid_iterators
         nav_msgs
         roscpp
+        backward_ros
 )
 
 catkin_package(

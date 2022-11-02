@@ -15,6 +15,7 @@ find_package(catkin REQUIRED COMPONENTS
   pluginlib
   roscpp
   sensor_msgs
+  backward_ros
 )
 
 catkin_package(

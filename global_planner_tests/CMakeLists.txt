@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.0.2)
 project(global_planner_tests)
 set_directory_properties(PROPERTIES COMPILE_OPTIONS "-std=c++11;-Wall;-Werror")
 
-find_package(catkin REQUIRED COMPONENTS map_server nav_core2 roscpp nav_msgs pluginlib)
+find_package(catkin REQUIRED COMPONENTS map_server nav_core2 roscpp nav_msgs pluginlib backward_ros)
 
 catkin_package(
     CATKIN_DEPENDS map_server nav_core2 roscpp nav_msgs pluginlib

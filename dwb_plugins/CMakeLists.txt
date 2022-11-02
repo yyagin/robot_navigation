@@ -3,7 +3,7 @@ project(dwb_plugins)
 
 set_directory_properties(PROPERTIES COMPILE_OPTIONS "-std=c++11;-Wall;-Werror")
 
-find_package(catkin REQUIRED COMPONENTS angles dwb_local_planner dynamic_reconfigure nav_2d_msgs nav_2d_utils nav_core2 pluginlib roscpp)
+find_package(catkin REQUIRED COMPONENTS angles dwb_local_planner dynamic_reconfigure nav_2d_msgs nav_2d_utils nav_core2 pluginlib roscpp backward_ros)
 
 generate_dynamic_reconfigure_options(cfg/KinematicParams.cfg)
 

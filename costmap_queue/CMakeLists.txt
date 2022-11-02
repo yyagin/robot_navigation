@@ -6,6 +6,7 @@ set_directory_properties(PROPERTIES COMPILE_OPTIONS "-std=c++11;-Wall;-Werror")
 find_package(catkin REQUIRED COMPONENTS
   nav_core2
   roscpp
+  backward_ros
 )
 
 catkin_package(

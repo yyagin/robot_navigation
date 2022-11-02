@@ -16,6 +16,7 @@ find_package(catkin REQUIRED COMPONENTS
     roscpp
     rviz
     std_msgs
+    backward_ros
 )
 
 set(CMAKE_AUTOMOC ON)

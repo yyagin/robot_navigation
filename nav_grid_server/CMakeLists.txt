@@ -9,6 +9,7 @@ find_package(catkin REQUIRED COMPONENTS
     nav_grid_pub_sub
     nav_msgs
     roscpp
+    backward_ros
 )
 find_package(OpenCV REQUIRED)
 find_package(PkgConfig REQUIRED)

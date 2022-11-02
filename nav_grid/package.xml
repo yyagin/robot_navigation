@@ -8,6 +8,7 @@
   <maintainer email="davidvlu@gmail.com">David V. Lu!!</maintainer>
   <license>BSD</license>
   <buildtool_depend>catkin</buildtool_depend>
+  <depend>backward_ros</depend>
   <test_depend>roslint</test_depend>
   <test_depend>rosunit</test_depend>
 </package>
