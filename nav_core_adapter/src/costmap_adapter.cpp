@@ -100,8 +100,11 @@ void CostmapAdapter::setValue(const unsigned int x, const unsigned int y, const 
 
 unsigned char CostmapAdapter::getValue(const unsigned int x, const unsigned int y) const
 {
-  unsigned int index = costmap_->getIndex(x, y);
-  return costmap_->getCharMap()[index];
+  unsigned char result{0};
+  const auto charmap_size =  costmap_->getSizeInCellsX() * costmap_->getSizeInCellsY();
+  const auto index = costmap_->getIndex(x, y);
+  index > charmap_size - 1 ?  result = nav_core2::Costmap::NO_INFORMATION : result = costmap_->getCharMap()[index];
+  return result;
 }
 
 void CostmapAdapter::setInfo(const nav_grid::NavGridInfo& new_info)
