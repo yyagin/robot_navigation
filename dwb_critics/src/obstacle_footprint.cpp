@@ -41,6 +41,7 @@
 #include <pluginlib/class_list_macros.h>
 #include <algorithm>
 #include <vector>
+#include <chrono>
 
 PLUGINLIB_EXPORT_CLASS(dwb_critics::ObstacleFootprintCritic, dwb_local_planner::TrajectoryCritic)
 
@@ -77,9 +78,14 @@ double ObstacleFootprintCritic::scorePose(const nav_core2::Costmap& costmap, con
 {
   unsigned char footprint_cost = 0;
   nav_grid::NavGridInfo info = costmap.getInfo();
+  auto ts = std::chrono::system_clock::now();
+  auto timeout {100};
   for (nav_grid::Index index : nav_grid_iterators::PolygonOutline(&info, footprint))
   {
     unsigned char cost = costmap(index.x, index.y);
+    if (std::chrono::duration_cast<std::chrono::milliseconds>((std::chrono::system_clock::now() - ts)).count() > timeout) {
+      throw nav_core2::IllegalTrajectoryException(name_, "Trajectory Hits Unknown Region.");
+    }
     // if the cell is in an obstacle the path is invalid or unknown
     if (cost == costmap.LETHAL_OBSTACLE)
     {
