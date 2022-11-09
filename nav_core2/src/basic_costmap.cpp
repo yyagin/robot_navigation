@@ -49,12 +49,12 @@ unsigned int BasicCostmap::getIndex(const unsigned int x, const unsigned int y) 
 
 unsigned char BasicCostmap::getValue(const unsigned int x, const unsigned int y) const
 {
-  return data_[getIndex(x, y)];
+  return data_.at(getIndex(x, y));
 }
 
 void BasicCostmap::setValue(const unsigned int x, const unsigned int y, const unsigned char& value)
 {
-  data_[getIndex(x, y)] = value;
+  data_.at(getIndex(x, y)) = value;
 }
 
 }  // namespace nav_core2

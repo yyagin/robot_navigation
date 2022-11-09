@@ -170,12 +170,12 @@ public:
 
   void setValue(const unsigned int x, const unsigned int y, const T& value) override
   {
-    data_[getIndex(x, y)] = value;
+    data_.at(getIndex(x, y)) = value;
   }
 
   T getValue(const unsigned int x, const unsigned int y) const override
   {
-    return data_[getIndex(x, y)];
+    return data_.at(getIndex(x, y));
   }
 
   using NavGrid<T>::operator();

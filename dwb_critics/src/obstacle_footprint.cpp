@@ -84,10 +84,10 @@ double ObstacleFootprintCritic::scorePose(const nav_core2::Costmap& costmap, con
   {
     unsigned char cost = costmap(index.x, index.y);
     if (std::chrono::duration_cast<std::chrono::milliseconds>((std::chrono::system_clock::now() - ts)).count() > timeout) {
-      throw nav_core2::IllegalTrajectoryException(name_, "Trajectory Hits Unknown Region.");
+      throw nav_core2::IllegalTrajectoryException(name_, "Obstacle Footprint scorePose timeout.");
     }
     // if the cell is in an obstacle the path is invalid or unknown
-    if (cost == costmap.LETHAL_OBSTACLE)
+    else if (cost == costmap.LETHAL_OBSTACLE)
     {
       throw nav_core2::IllegalTrajectoryException(name_, "Trajectory Hits Obstacle.");
     }
